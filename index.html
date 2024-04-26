@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clóvis</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <nav>
+            <a href="#first" screen_name="first"><i class="fa fa-user"></i></a>
+            <a href="#second" screen_name="second"><i class="fa fa-briefcase"></i></a>
+            <a href="#third" screen_name="third"><i class="fa fa-file"></i></a>
+            <a href="#fourth" screen_name="fourth"><i class="fa fa-address-card"></i></a>
+        </nav>
+        <div class="container">
+            <section id="first">
+                <h1>Single Page Aplication - SPA</h1>
+            </section>
+            <section id="second">
+                <h1>Single Page Aplication - SPA</h1>
+            </section>
+            <section id="third">
+                <h1>Single Page Aplication - SPA</h1>
+            </section>
+            <section id="fourth">
+                <h1>Single Page Aplication - SPA</h1>
+            </section>
+        </div>
+    </body>
+</html>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        var screen_name = $("a").attr("screen_name");
+        window.location.hash = "#" + screen_name;
+    });
+</script>
